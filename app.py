@@ -36,5 +36,3 @@ blogData=st.text_area("Insert the blog data here", height=300)
 if st.button("Generate Keywords"):
     outputText=call_groq_api(blogData)
     st.text_area("keywords generated", outputText, height=500)
-
-st.info("This is a Keyword Generator experiment")
