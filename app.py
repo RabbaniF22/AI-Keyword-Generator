@@ -1,7 +1,11 @@
 import streamlit as st
 from groq import Groq
+import os
+from dotenv import load_dotenv
 
-groq_api_key="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"
+load_dotenv()
+
+groq_api_key=os.getenv("GROQ_API_KEY")
 client=Groq(api_key=groq_api_key)
 MODEL="Llama3-8b-8192"
 
