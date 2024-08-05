@@ -7,7 +7,7 @@ load_dotenv()
 
 groq_api_key=os.getenv("GROQ_API_KEY")
 client=Groq(api_key=groq_api_key)
-MODEL="Llama3-8b-8192"
+MODEL="Llama-3.1-70b-Versatile"
 
 def call_groq_api(blogData):
     messages = []
